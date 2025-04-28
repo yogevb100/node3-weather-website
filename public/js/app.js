@@ -1,4 +1,4 @@
-console.log("client side js file loaded");
+console.log("client side js file loaded.");
 
 const weatherForm = document.querySelector("#weather-form");
 const search = document.querySelector("#search-box");
@@ -25,21 +25,6 @@ weatherForm.addEventListener("submit", (e) => {
     });
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // fetch("http://puzzle.mead.io/puzzle").then((response) => {
 //   response.json().then((data) => {
