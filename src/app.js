@@ -5,6 +5,7 @@ const geocode = require("./utils/geocode");
 const forecast = require("./utils/forecast"); //weather forecast
 
 const app = express();
+const port = process.env.PORT || 3000; //heroku port or local port
 //Define path for Express config
 const publicDirectoryPath = path.join(__dirname, "../public");
 const viewsPath = path.join(__dirname, "../templates/views");
@@ -85,6 +86,8 @@ app.get("*", (req, res) => {
   res.send("My 404 page");
 });
 
-app.listen(3000, () => {
-  console.log("Server is up on port 3000");
+//port 3000 local
+//port 80 heroku
+app.listen(port, () => {
+  console.log("Server is up on port " + port);
 });
