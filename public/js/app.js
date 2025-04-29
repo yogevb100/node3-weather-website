@@ -19,8 +19,11 @@ weatherForm.addEventListener("submit", (e) => {
           data.forecast.current.weather_descriptions[0] +
           ". It is currently " +
           data.forecast.current.temperature +
-          " and feels like " +
-          data.forecast.current.feelslike;
+          ", and feels like " +
+          data.forecast.current.feelslike +
+          ". The humidity is " +
+          data.forecast.current.humidity +
+          ".";
       }
     });
   });
